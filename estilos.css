@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fonte-destaque: 'roboto condensed', sans-serif;
+    --fonte-padrao: Arial,  Verdana, Helvetica, sans-serif;
+
+    --cor0: #A37B2C;
+    --cor1: #8B8B8B;
+    --cor2: #626262;
+    --cor3: #2E2E2E;
+    --cor4: #0A0907;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: #8b8b8bda;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: black url(imagens/corsimbolo.jpeg) center center repeat fixed;
+    background-size: 100px 100px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+    margin: auto;
+    padding-bottom: 5px;
+    padding-top: 40px;
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: #0A0907;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.415);
+    margin-bottom: 15px;
+}
+
+header > p{
+    text-align: justify;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+
+}
+
+main{
+    background-image: linear-gradient(to right, white, rgb(176, 170, 170));
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419)
+    ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+main h1{
+    color:#0A0907;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    font-weight: bolder;
+
+}
+
+main h2{
+    color: #2E2E2E;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a{
+    color:var(--cor3);
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+main a:hover{
+    color: var(--cor2);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside{
+    background-color:var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.285);
+}
+
+aside H3{
+    font-size: 1.2em;
+    color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
+}
+aside ul{
+    list-style-type: '\2B50\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+    color: var(--cor1);
+
+}
+
+aside a{
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
+}
+
+a#insta:hover{
+    color: pink;
+}
+
+a#yt:hover{
+    color:red;
+}
+
+a#x:hover{
+    color: blue;
+}
+
+a#cor:hover{
+    color: black;
+}
+
+p#rodape{
+    font-style: italic;
+}
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0,8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    transition-duration: 0.5s;  
+}
+
+a.externo{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--cor1);
+    background-color:var(--cor4);
+    border-radius: 5px;
+}
+
+a.externo::after{
+    content: '\1F517';
+}
+
+#torcida{
+    padding-bottom: 10px;
+}
+
